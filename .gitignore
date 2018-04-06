@@ -1,0 +1,9 @@
+*~
+*.log
+*.pdf
+*.epub
+*.mobi
+
+_book/
+node_modules/
+tmp*/

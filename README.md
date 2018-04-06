@@ -2,6 +2,8 @@
 
 _Or learn test-driven development with Go._
 
+[![Build Status](https://travis-ci.org/damianoneill/learn-go-with-tests.svg?branch=master)](https://travis-ci.org/damianoneill/learn-go-with-tests)
+
 ## Why
 
 - Explore the Go language by writing tests

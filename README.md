@@ -3,6 +3,7 @@
 _Or learn test-driven development with Go._
 
 [![Build Status](https://travis-ci.org/damianoneill/learn-go-with-tests.svg?branch=master)](https://travis-ci.org/damianoneill/learn-go-with-tests)
+[![Go Report Card](https://goreportcard.com/badge/github.com/damianoneill/learn-go-with-tests)](https://goreportcard.com/report/github.com/damianoneill/learn-go-with-tests)
 
 This book is hosted on [github-pages](http://damianoneill.github.io/learn-go-with-tests/).
 

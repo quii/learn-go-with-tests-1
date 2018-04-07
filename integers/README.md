@@ -18,3 +18,7 @@ func TestAdder(t *testing.T) {
 	}
 }
 ```
+
+Show the complete test 
+
+{% include "./adder_test.go" %}

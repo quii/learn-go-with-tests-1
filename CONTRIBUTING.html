@@ -1,0 +1,322 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Contributing · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="integers/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="install/README.md">
+            
+                <a href="install/README.md">
+            
+                    
+                    Install Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="helloworld/README.md">
+            
+                <a href="helloworld/README.md">
+            
+                    
+                    Hello, World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="integers/">
+            
+                <a href="integers/">
+            
+                    
+                    Integers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="CONTRIBUTING.html">
+            
+                <a href="CONTRIBUTING.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Contributing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="contributing">Contributing</h1>
+<p>Contributions are very welcome, I hope for this to become a great home for guides of how to learn go by writing tests</p>
+<h2 id="what-were-looking-for">What we&apos;re looking for</h2>
+<ul>
+<li>Teaching Go features (e.g things like <code>if</code>, <code>select</code>, structs, methods, etc)</li>
+<li>Showcase interesting functionality within the standard library. Show off how easy it is to TDD a HTTP server for instance.</li>
+<li>Show how Go&apos;s tooling, like benchmarking, race detectors, etc can help you arrive at great software</li>
+</ul>
+<p>If you don&apos;t feel confident to submit your own guide, submitting an issue for something you want to learn is still a valuable contribution.</p>
+<h2 id="style-guide">Style guide</h2>
+<ul>
+<li>Always reinforce the TDD cycle. Take a look at <a href="template.md">template.md</a></li>
+<li><p>Emphasis on iterating over functionality driven by tests. The Hello, world example works well because we gradually make it more sophisticated and learning new techniques <em>driven</em> by the tests. For example:</p>
+<ul>
+<li><code>Hello()</code> &lt;- how to write functions, return types.</li>
+<li><code>Hello(name string)</code> &lt;- arguments, constants</li>
+<li><code>Hello(name string)</code> &lt;- default to &quot;world&quot; using <code>if</code></li>
+<li><code>Hello(name, language string)</code> &lt;- <code>switch</code></li>
+</ul>
+</li>
+<li><p>Try to minimise the surface area of required knowledge.</p>
+<ul>
+<li>Thinking of examples that showcase what you&apos;re trying to teach without confusing the reader with other features is important.</li>
+<li>For example, you can learn about <code>struct</code>s without understanding pointers.</li>
+<li>Brevity is king.</li>
+</ul>
+</li>
+<li>Follow the <a href="https://github.com/golang/go/wiki/CodeReviewComments" _target="blank">Code Review Comments style guide</a>. It&apos;s important for a consistent style across all the sections.</li>
+<li>Your section should have a runnable application at the end (e.g <code>package main</code> with a <code>main</code> func) so users can see it in action and play with it</li>
+<li>All tests should pass</li>
+</ul>
+<h2 id="publishing-this-book">Publishing this book</h2>
+<p>Docker is used both for travis and for local builds. You can create the Docker image as follows:</p>
+<pre><code class="lang-sh">docker build -t learn-go-with-tests .
+</code></pre>
+<p><em>NOTE</em> The Docker solution is not using Volumes, its copying the contents into the image, so update files locally without rebuilding the image will not show the updates.</p>
+<p>The book can be published to Github Pages with the following command:</p>
+<pre><code class="lang-sh">docker run --rm -it learn-go-with-tests make publish <span class="hljs-_">-e</span> GITHUB_TOKEN=xxxx
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="integers/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Integers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Contributing","level":"1.5","depth":1,"previous":{"title":"Integers","level":"1.4","depth":1,"path":"integers/README.md","ref":"integers/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.0.x","theme":"default","variables":{},"plugins":["-sharing","katex@1.1.3","edit-link@2.0.x","github@2.0.x"],"pluginsConfig":{"edit-link":{"base":"https://github.com/damianoneill/learn-go-with-tests/edit/master","label":"Edit"},"github":{"url":"https://github.com/damianoneill/learn-go-with-tests"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"CONTRIBUTING.md","mtime":"2018-04-07T00:56:51.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2018-04-07T01:00:23.123Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

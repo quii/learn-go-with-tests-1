@@ -34,7 +34,7 @@ publish: build pdf epub mobi
 	git checkout -b gh-pages && \
 	git add . && \
 	git commit -am 'update gh-pages' && \
-	git push https://github.com/damianoneill/learn-go-with-tests gh-pages --force
+	git push https://damianoneill:$(GITHUB_TOKEN)@github.com/damianoneill/learn-go-with-tests gh-pages --force
 
 clean:
 	rm -rf _book

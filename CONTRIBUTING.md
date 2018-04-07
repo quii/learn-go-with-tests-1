@@ -52,5 +52,5 @@ docker run --rm -it learn-go-with-tests make test
 The book can be published to Github Pages with the following command:
 
 ```sh
-docker run --rm -it learn-go-with-tests make publish
+docker run --rm -it learn-go-with-tests make publish -e GITHUB_TOKEN=xxxx
 ```

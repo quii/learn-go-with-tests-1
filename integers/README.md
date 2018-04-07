@@ -19,6 +19,8 @@ func TestAdder(t *testing.T) {
 }
 ```
 
-Show the complete test 
+Show the complete test
 
+```go
 {% include "./adder_test.go" %}
+```

@@ -7,7 +7,7 @@ _Or learn test-driven development with Go._
 
 This book is hosted on [github-pages](http://damianoneill.github.io/learn-go-with-tests/).
 
-Ebook can be downloaded as [pdf](https://damianoneill.github.io/learn-go-with-tests/raw/gh-pages/learn-go-with-tests.pdf), [epub](https://damianoneill.github.io/learn-go-with-tests/raw/gh-pages/learn-go-with-tests.epub) and [mobi](https://damianoneill.github.io/learn-go-with-tests/raw/gh-pages/learn-go-with-tests.mobi).
+Ebook can be downloaded as [pdf](https://damianoneill.github.io/learn-go-with-tests/learn-go-with-tests.pdf), [epub](https://damianoneill.github.io/learn-go-with-tests/learn-go-with-tests.epub) and [mobi](https://damianoneill.github.io/learn-go-with-tests/learn-go-with-tests.mobi).
 
 ## Why
 
